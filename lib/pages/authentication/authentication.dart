@@ -24,10 +24,10 @@ class AuthenticationPage extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.only(right: 12),
-                    child: Image.asset(kIconLogo),
-                  ),
+                  // Padding(
+                  //   padding: const EdgeInsets.only(right: 12),
+                  //   child: Image.asset(kIconLogo),
+                  // ),
                   Expanded(child: Container()),
                 ],
               ),

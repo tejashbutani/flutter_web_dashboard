@@ -20,10 +20,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      initialRoute: authenticationPageRoute,
+      initialRoute: rootRoute,
       unknownRoute: GetPage(name: "/not-found", page: () => PageNotFound(), transition: Transition.fadeIn),
       getPages: [
-        GetPage(name: overviewPageRoute, page: () => const SiteLayout()),
+        GetPage(name: rootRoute, page: () => const SiteLayout()),
         GetPage(name: authenticationPageRoute, page: () => const AuthenticationPage()),
       ],
       debugShowCheckedModeBanner: false,
@@ -39,7 +39,6 @@ class MyApp extends StatelessWidget {
         }),
         primaryColor: Colors.lightGreenAccent,
       ),
-      home: AuthenticationPage(),
     );
   }
 }
